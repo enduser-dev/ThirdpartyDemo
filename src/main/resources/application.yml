@@ -1,0 +1,13 @@
+server:
+  port: 50000
+spring:
+  application:
+    name: thirdparty-service
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  main:
+    allow-circular-references: true
+app:
+  key: c07bmwa1wmUd9c99853M28gOUYxRtTqh
+  secret: QNvd2dex72GLkuLOt30TIoM8t7B9qhSOT4ZhwX4oMi93NBkSBEZmG56FsRsC9n4D
