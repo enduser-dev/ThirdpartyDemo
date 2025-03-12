@@ -101,6 +101,10 @@ public class TokenService {
         return new TokenDto(100005, "未知异常");
     }
 
+    public TokenDto tokenByNotValidate(TokenParam param) {
+        return generateToken(param.getAuth_code());
+    }
+
     public TokenDto getInfoByAccessToken(String accessToken){
         if(!accessTokenMap.containsKey(accessToken)){
             return new TokenDto(100000, "token 无效");

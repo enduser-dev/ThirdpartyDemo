@@ -11,3 +11,15 @@ spring:
 app:
   key: c07bmwa1wmUd9c99853M28gOUYxRtTqh
   secret: QNvd2dex72GLkuLOt30TIoM8t7B9qhSOT4ZhwX4oMi93NBkSBEZmG56FsRsC9n4D
+knife4j:
+  enable: true
+  openapi:
+    title: 第三方用户系统接入示例项目接口文档
+    description: 本示例项目主要是为了演示第三方用户系统接入时需要实现的接口
+    version: v1.0.0
+    group:
+      OAuth:
+        group-name: OAuth
+        api-rule: package
+        api-rule-resources:
+          - com.quec.thirdparty.demo.controller
